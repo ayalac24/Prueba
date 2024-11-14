@@ -1,206 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <title>Kool Form Pack | Coming Soon Page</title>
-
-        <!-- CSS FILES -->                
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
-        
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-
-        <link href="css/tooplate-kool-form-pack.css" rel="stylesheet">
-
-        <link rel="preconnect" href="404.html">
-        
-<!--
-
-Tooplate 2136 Kool Form Pack
-
-https://www.tooplate.com/view/2136-kool-form-pack
-
-Bootstrap 5 Form Pack Template
-
--->
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Router Configuration Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2d3e50;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav li {
+            margin-right: 15px;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            padding: 8px 12px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #2c3e50;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #ecf0f1;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Router Configuration
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="administration.html">Administration</a></li>
+            <li><a href="logs.html">Logs</a></li>
+            <li><a href="help.html">Help</a></li>
+        </ul>
+    </nav>
     
-    <body>
-
-        <main>
-
-            <header class="site-header">
-                <div class="container">
-                    <div class="row justify-content-between">
-
-                        <div class="col-lg-12 col-12 d-flex align-items-center">
-                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
-                                <i class="bi-box"></i>
-
-                                <span>
-                                    Kool Form Pack
-                                </span>
-                            </a>
-
-                            <ul class="social-icon d-flex justify-content-center align-items-center mx-auto">
-                                <span class="text-white me-4 d-none d-lg-block">
-                                    Buenos días compañeros, bendiciones.
-                                </span>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-instagram"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-twitter"></a>
-                                </li>
-
-                                <li class="social-icon-item">
-                                    <a href="#" class="social-icon-link bi-whatsapp"></a>
-                                </li>
-                            </ul>
-
-                            <div>
-                                <a href="#" class="custom-btn custom-border-btn btn" data-bs-toggle="modal" data-bs-target="#subscribeModal">Notify me
-                                    <i class="bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-
-                            <a class="bi-list offcanvas-icon" data-bs-toggle="offcanvas" href="#offcanvasMenu" role="button" aria-controls="offcanvasMenu"></a>
-
-                        </div>
-
-                    </div>
-                </div>
-            </header>
-
-
-            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">                
-                <div class="offcanvas-header">                    
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                
-                <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="login.html">Login Form</a>
-                            </li>
-
-                            <li>
-                                <a href="register.html">Create an account</a>
-                            </li>
-
-                            <li>
-                                <a href="password-reset.html">Password Reset</a>
-                            </li>
-
-                            <li>
-                                <a href="404.html">404 Page</a>
-                            </li>
-
-                            <li>
-                                <a href="contact.html">Contact Form</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Network Map</a></li>
+                <li><a href="#">Guest Network</a></li>
+                <li><a href="#">Traffic Analyzer</a></li>
+                <li><a href="#">QoS</a></li>
+                <li><a href="#">Firewall</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h2>Basic Settings</h2>
+            <div class="form-group">
+                <label for="ssid">SSID:</label>
+                <input type="text" id="ssid" name="ssid">
             </div>
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
-                                <h2 class="modal-title" id="subscribeModalLabel">Stay up to date</h2>
-                                        <link rel="preconnect" href="404.html">
-
-
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required="">
-
-                                <button type="submit" class="form-control">Notify</button>
-                            </form>
-                        </div>
-
-                        <div class="modal-footer justify-content-center">
-                            <p>By signing up, you agree to our Privacy Notice</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
             </div>
-
-
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-12 mx-auto">
-                            <small>our website is under construction. 
-                            <a rel="nofollow" target="_blank" href="https://www.pexels.com/video/digital-projection-of-the-earth-mass-in-blue-lights-3129957/">Earth video by Pexels</a></small>
-                            <!-- please set the date time in the init.js file -->
-                            
-                          <h1 class="text-white mt-2 mb-4 pb-2">
-                                Stay tuned!
-                            </h1>
-
-                             <ul class="countdown d-flex flex-wrap align-items-center">
-                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="countdown-title days">14</h2>
-                                    <span class="countdown-text">Days</span>
-                               </li>
-
-                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="countdown-title hours">10</h2>
-                                    <span class="countdown-text">Hours</span>
-                               </li>
-
-                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="countdown-title minutes">15</h2>
-                                    <span class="countdown-text">Minutes</span>
-                               </li>
-
-                               <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
-                                    <h2 class="countdown-title seconds">34</h2>
-                                    <span class="countdown-text">Seconds</span>
-                               </li>     
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video-wrap">
-                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        <source src="videos/video.mp4" type="video/mp4">
-
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </section>
+            <div class="form-group">
+                <label for="channel">Channel:</label>
+                <select id="channel" name="channel">
+                    <option value="1">1</option>
+                    <option value="6">6</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <button class="btn">Save Settings</button>
         </main>
-
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/countdown.js"></script>
-        <script src="js/init.js"></script>
-
-    </body>
-    <title>Chable was here</title>
+    </div>
+</body>
 </html>
